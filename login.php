@@ -7,7 +7,7 @@
         $requete = "SELECT * FROM user WHERE Username=:username AND Motdepasse=:motdepasse";
         $login = $db -> prepare($requete);
         $login->bindParam(':username',$username);
-        $login->bindParam(':motdepasse',$motdepasse);
+        $login->bindParam(':motdepasse',md5($motdepasse));
         $login->execute();
         $connection = $login->fetch(PDO::FETCH_ASSOC);
         if(!empty($connection)){
@@ -15,5 +15,8 @@
             $_SESSION['username'] = $connection['Username'];
             header('location:pages/utilisateurs/utilisateurs.php');
         }
+    }
+    else{
+        print('Mauvais mout de passe');
     }
 ?>
