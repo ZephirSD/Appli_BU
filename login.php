@@ -13,10 +13,11 @@
         if(!empty($connection)){
             $_SESSION['id'] = $connection['Id'];
             $_SESSION['username'] = $connection['Username'];
+            $_SESSION['email'] = $connection['Email'];
             header('location:pages/utilisateurs/utilisateurs.php');
         }
     }
     else{
-        print('Mauvais mout de passe');
+        print('Mauvais mot de passe');
     }
 ?>
