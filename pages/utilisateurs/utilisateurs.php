@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if(!isset($_SESSION['id']) && empty($_SESSION['id'])){
+    if(isset($_SESSION['id']) && empty($_SESSION['id'])){
         header('location:http://localhost/Appli_BU/');
     }
 ?>
@@ -14,7 +14,12 @@
     <title>Listes des utilisateurs</title>
 </head>
 <body>
-    <h1>Listes des Utilisateurs</h1>
+    <a href="../utilisateurs/creer/creer_utilisateur.php">Créer</a><h1>Listes des Utilisateurs</h1>
+    <span>
+        <form method="POST" action="../../logout.php">
+            <button type="submit" name="btnDeco">Deconnecter</button>
+        </form>
+    </span>
     <span><?php echo($_SESSION['username'])?></span>
     <table border="1">
         <?php 
