@@ -31,7 +31,7 @@
             <label>Disponible</label>
             <select name="dispoPoste">
                 <option value="0">Non disponible</option>
-                <option value="1">Disponible</option>
+                <option value="1" selected>Disponible</option>
             </select>
         </div>
         <button type="submit" name="btnCreerPoste">Créer</button>
