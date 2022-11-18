@@ -16,7 +16,7 @@
 <body>
     <div class="case_lien_header">
         <a href="../accueil.php">Retour</a>
-        <a href="../utilisateurs/creer/creer_utilisateur.php">Créer</a>
+        <a href="../reservations/creer/creer_reservation.php">Créer</a>
     </div>
     <h1>Listes des Reservations</h1>
     <span>
