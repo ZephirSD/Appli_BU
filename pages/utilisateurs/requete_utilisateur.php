@@ -5,7 +5,7 @@
     try{
         $stmt = $db->query($sql);    
         if($stmt === false){
-            die("Erreur");
+            print('Erreur');
         }
     }catch (PDOException $e){
         echo $e->getMessage();
