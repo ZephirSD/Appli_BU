@@ -24,7 +24,7 @@
     <span><?php echo ($_SESSION['username']) ?></span>
     <a href="utilisateurs/utilisateurs.php">Utilisateurs</a>
     <a href="postes/postes.php">Postes</a>
-    <a href="reservations/reservations.php">Resservations</a>
+    <a href="reservations/reservations.php">Reservations</a>
 </body>
 
 </html>
