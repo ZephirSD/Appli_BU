@@ -27,7 +27,7 @@
     ?>
     <form method="POST" action="requete_creer_reservation.php">
         <div>
-            <label>Numéro de reservation</label>
+            <label>Numéro de réservation</label>
             <input type="text" name="numReserv">
         </div>
         <div>
