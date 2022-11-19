@@ -14,7 +14,7 @@
             $_SESSION['id'] = $connection['Id'];
             $_SESSION['username'] = $connection['Username'];
             $_SESSION['email'] = $connection['Email'];
-            header('location:pages/utilisateurs/utilisateurs.php');
+            header('location:pages/accueil.php');
         }
     }
     else{
