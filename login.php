@@ -16,8 +16,11 @@
             $_SESSION['email'] = $connection['Email'];
             header('location:pages/accueil.php');
         }
+        else{
+            header('location:http://localhost/Appli_BU/');
+        }
     }
     else{
-        print('Mauvais mot de passe');
+        header('location:http://localhost/Appli_BU/');
     }
 ?>
