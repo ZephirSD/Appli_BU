@@ -11,24 +11,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
     <title>Listes des réservations</title>
 </head>
 <body>
-    <div class="case_lien_header">
-        <a href="../accueil.php">Retour</a>
-        <a href="../reservations/creer/creer_reservation.php">Créer</a>
-    </div>
-    <h1>Listes des Reservations</h1>
-    <span>
-        <form method="POST" action="../../logout.php">
-            <button type="submit" name="btnDeco">Deconnecter</button>
-        </form>
-    </span>
-    <span><?php echo($_SESSION['username'])?></span>
-    <table border="1">
-        <?php 
-            include 'affiche_reservation.php';
-        ?>
-    </table>
+    <main class="main_reserv">
+        <div class="case_utilis">
+            <div class="case_retour">
+                <a href="../accueil.php">
+                    <img src="../../images/back_icon.png" width="50"/>
+                </a>
+            </div>
+            <div class="button_deco btnRight">
+                <form method="POST" action="../../logout.php">
+                    <button type="submit" name="btnDeco" class="btnDeco">
+                        <img src="../../images/deconnexion_icone.png" width="50"/>
+                        <span><?php echo(ucfirst($_SESSION['username']))?></span>
+                    </button>
+                </form>
+            </div>
+            <div class="div_titre">
+                <h1 class="titre_accueil">Listes des Réservations</h1>
+                <a href="../reservations/creer/creer_reservation.php">
+                    <img src="../../images/plus_icon.png" width="30"/>
+                </a>
+            </div>
+            <div class="case_table">
+                <table class="table_utilis">
+                    <?php 
+                        include 'affiche_reservation.php';
+                    ?>
+                </table>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
