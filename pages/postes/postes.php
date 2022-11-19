@@ -16,9 +16,9 @@
 <body>
     <div class="case_lien_header">
         <a href="../accueil.php">Retour</a>
-        <a href="../utilisateurs/creer/creer_utilisateur.php">Créer</a>
+        <a href="../postes/creer/creer_poste.php">Créer</a>
     </div>
-    <h1>Listes des Utilisateurs</h1>
+    <h1>Listes des Postes</h1>
     <span>
         <form method="POST" action="../../logout.php">
             <button type="submit" name="btnDeco">Deconnecter</button>
