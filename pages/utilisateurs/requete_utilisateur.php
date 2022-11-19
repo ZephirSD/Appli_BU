@@ -1,7 +1,7 @@
 <?php
     $route = $_SERVER['DOCUMENT_ROOT'];
     require $route.'\Appli_BU\db\db.php';
-    $sql = 'SELECT * FROM utilisateur';
+    $sql = 'SELECT `Id`,`Nom`,`Prenom`,`Email` FROM `utilisateur`';
     try{
         $stmt = $db->query($sql);    
         if($stmt === false){
