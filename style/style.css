@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --backgroundBody: #292929;
+    --montserrat: 'Montserrat', sans-serif;
+    --blancCasse: #E2E2E2;
+    --bleuAppli: #4AABFF;
+    --gridInput: #959595;
+    --width100: 100%;
+    --width_case_connexion: 70%;
+    --height100: 100vh;
+    --height_case_connexion: 70vh;
+    --param_icon_position: 20px;
+}
+
+body{
+    color: white;
+    background-color: var(--backgroundBody);
+    font-family: var(--montserrat);
+    margin: 0;
+    padding: 0;
+}
+
+main.main_connexion,
+main.main_accueil,
+main.main_utilis,
+main.main_poste,
+main.main_reserv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--width100);
+    height: var(--height100);
+}
+
+div.div_titre{
+    display: flex;
+    width: 100%; 
+    justify-content: center; 
+    align-items: center;
+}
+
+div.div_titre img{
+    margin-left: 20px;
+}
+
+div.div_titre a{
+    text-decoration: none;
+}
+
+/* Partie Connexion */
+div.case_connexion{
+    background-color: var(--blancCasse);
+    width: var(--width_case_connexion);
+    height: var(--height_case_connexion);
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.case_input{
+    flex-direction: column;
+    display: flex;
+    width: 40vw;
+    margin: 4vh 0;
+}
+
+div.case_input label{
+    color: black;
+}
+
+div.case_input input{
+    background-color: var(--gridInput);
+    border: none;
+    height: 30px;
+    color: white;
+    font-family: var(--montserrat);
+}
+
+div.case_input input:focus{
+    border: none;
+}
+
+div.case_button{
+    width: var(--width100);
+    display: flex;
+    justify-content: center;
+}
+
+button.btnAppli{
+    background-color: var(--bleuAppli);
+    border-radius: 15px;
+    border: none;
+    margin: 0 auto;
+    padding: 10px 60px;
+    color: white;
+    font-family: var(--montserrat);
+    cursor: pointer;
+}
+
+/* Partie Accueil */
+div.button_deco{
+    position: absolute;
+    top: var(--param_icon_position);
+    left: var(--param_icon_position);
+}
+
+button.btnDeco{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+h1.titre_accueil{
+    text-align: center;
+}
+
+div.case_lien_accueil{
+    background-color: var(--blancCasse);
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20vh 10vw;
+}
+
+div.case_lien_accueil a{
+    background-color: var(--gridInput);
+    width: 20vw;
+    padding: 10px 15px;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: var(--montserrat);
+    border-radius: 20px;
+}
+
+/* Partie Utilisateurs */
+div.case_retour{
+    position: absolute;
+    top: var(--param_icon_position);
+    left: var(--param_icon_position);
+}
+
+div.button_deco.btnRight{
+    position: absolute;
+    top: var(--param_icon_position);
+    right: var(--param_icon_position)!important;
+    left: unset;
+}
+
+div.button_deco.btnRight button{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: var(--montserrat);
+}
+
+div.button_deco.btnRight button span{
+    margin-top: 10px;
+}
+
+div.case_table{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+table.table_utilis{
+    width: 80vw;
+    border: none;
+    border-collapse: collapse;
+}
+
+table.table_utilis tr{
+    background-color: var(--gridInput);
+}
+
+table.table_utilis td{
+    padding: 10px 0;
+    text-align: center;
+}
+
+a.btnModif,
+a.btnSuppr{
+    padding: 5px 15px;
+    background-color: var(--bleuAppli);
+    color: white;
+    text-decoration: none;
+    font-family: var(--montserrat);
+    border-radius: 10px;
+}
+
+div.case_form_utilis,
+div.case_form_poste{
+    background-color: var(--blancCasse);
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 10vw;
+}
+
+/* Partie Poste */
+select.slcAppli{
+    background-color: var(--gridInput);
+    border: none;
+    height: 30px;
+    color: white;
+    font-family: var(--montserrat);
+}
