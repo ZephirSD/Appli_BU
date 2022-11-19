@@ -41,7 +41,7 @@
                         </div>
                         <div class="case_input">
                             <label>Disponible</label>
-                            <select name="dispoPoste">
+                            <select name="dispoPoste" class="slcAppli">
                                 <option value="0" <?php echo($row['Disponible'] == "0" ? "selected" : "" )?>>Non disponible</option>
                                 <option value="1" <?php echo($row['Disponible'] == "1" ? "selected" : "" ) ?>>Disponible</option>
                             </select>

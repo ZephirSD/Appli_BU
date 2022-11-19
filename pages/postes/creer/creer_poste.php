@@ -39,7 +39,7 @@
                     </div>
                     <div class="case_input">
                         <label>Disponible</label>
-                        <select name="dispoPoste">
+                        <select name="dispoPoste" class="slcAppli">
                             <option value="0">Non disponible</option>
                             <option value="1" selected>Disponible</option>
                         </select>
