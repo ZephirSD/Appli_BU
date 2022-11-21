@@ -32,15 +32,15 @@
                 <form method="POST" action="requete_creer_utilisateur.php">
                     <div class="case_input">
                         <label>Email</label>
-                        <input type="email" name="mailUtili">
+                        <input type="email" name="mailUtili" required />
                     </div>
                     <div class="case_input">
                         <label>Nom</label>
-                        <input type="text" name="nomUtili">
+                        <input type="text" name="nomUtili" required />
                     </div>
                     <div class="case_input">
                         <label>Prénom</label>
-                        <input type="text" name="prenomUtili">
+                        <input type="text" name="prenomUtili" required />
                     </div>
                     <div class="case_button">
                         <button type="submit" name="btnCreerUtil" class="btnAppli">Créer</button>

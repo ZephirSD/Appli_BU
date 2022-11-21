@@ -42,7 +42,7 @@
                     </div>
                     <div class="case_input">
                         <label>Poste Disponible</label>
-                        <select name="dispoPoste" class="slcAppli">
+                        <select name="dispoPoste" class="slcAppli" required>
                             <?php while($rowPoste = $stmtRec->fetch(PDO::FETCH_ASSOC)):?>
                                 <option value="<?php echo($rowPoste['Id'])?>"><?php echo($rowPoste['Num_poste'])?></option>
                             <?php endwhile;?>
@@ -50,7 +50,7 @@
                     </div>
                     <div class="case_input">
                         <label>Utilisateur Disponible</label>
-                        <select name="dispoUtilis" class="slcAppli">
+                        <select name="dispoUtilis" class="slcAppli" required>
                             <?php while($rowUtili= $stmtRec2->fetch(PDO::FETCH_ASSOC)):?>
                                 <?php if($result != $rowUtili['Id']):?>
                                     <option value="<?php echo($rowUtili['Id'])?>"><?php echo($rowUtili['Email'])?></option>
@@ -60,11 +60,11 @@
                     </div>
                     <div class="case_input">
                         <label>Date de début</label>
-                        <input type="datetime-local" name="dtDebutReserv"/>
+                        <input type="datetime-local" name="dtDebutReserv" required/>
                     </div>
                     <div class="case_input">
                         <label>Date de fin</label>
-                        <input type="datetime-local" name="dtFinReserv"/>
+                        <input type="datetime-local" name="dtFinReserv" required/>
                     </div>
                     <div class="case_button">
                         <button type="submit" name="btnCreerReserv" class="btnAppli">Créer</button>

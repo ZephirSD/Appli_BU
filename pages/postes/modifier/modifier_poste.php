@@ -37,11 +37,11 @@
                         <input type="hidden" name="idModPoste" value="<?php echo $row['Id'];?>"/>
                         <div class="case_input">
                             <label>Numéro de poste</label>
-                            <input type="text" name="numPoste" value="<?php echo $row['Num_poste'];?>">
+                            <input type="text" name="numPoste" value="<?php echo $row['Num_poste'];?>" required />
                         </div>
                         <div class="case_input">
                             <label>Disponible</label>
-                            <select name="dispoPoste" class="slcAppli">
+                            <select name="dispoPoste" class="slcAppli" required>
                                 <option value="0" <?php echo($row['Disponible'] == "0" ? "selected" : "" )?>>Non disponible</option>
                                 <option value="1" <?php echo($row['Disponible'] == "1" ? "selected" : "" ) ?>>Disponible</option>
                             </select>

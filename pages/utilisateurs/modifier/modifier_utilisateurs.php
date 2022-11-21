@@ -37,15 +37,15 @@
                     <input type="hidden" name="idModUtili" value="<?php echo $row['Id'];?>"/>
                     <div class="case_input">
                         <label>Email</label>
-                        <input type="email" name="mailModUtili" value="<?php echo $row['Email'];?>">
+                        <input type="email" name="mailModUtili" value="<?php echo $row['Email'];?>" required/>
                     </div>
                     <div class="case_input">
                         <label>Nom</label>
-                        <input type="text" name="nomModUtili" value="<?php echo $row['Nom'];?>">
+                        <input type="text" name="nomModUtili" value="<?php echo $row['Nom'];?>" required/>
                     </div>
                     <div class="case_input">
                         <label>Prenom</label>
-                        <input type="text" name="prenomModUtili" value="<?php echo $row['Prenom'];?>">
+                        <input type="text" name="prenomModUtili" value="<?php echo $row['Prenom'];?>" required/>
                     </div>
                     <?php endwhile;?>
                     <div class="case_button">
