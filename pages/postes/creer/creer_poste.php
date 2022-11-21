@@ -35,11 +35,11 @@
                 <form method="POST" action="requete_creer_poste.php">
                     <div class="case_input">
                         <label>Numéro de poste</label>
-                        <input type="text" name="numPoste">
+                        <input type="text" name="numPoste" required />
                     </div>
                     <div class="case_input">
                         <label>Disponible</label>
-                        <select name="dispoPoste" class="slcAppli">
+                        <select name="dispoPoste" class="slcAppli" required>
                             <option value="0">Non disponible</option>
                             <option value="1" selected>Disponible</option>
                         </select>
